@@ -1,0 +1,114 @@
+
+/* Universal Styles */
+
+html{
+    font-size:16px;
+    font-family: 'Moulpali','Arial', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type:none;
+    color: antiquewhite;
+  }
+.center{
+    text-align: center;
+}
+  
+@font-face {
+    font-family:'Moulpali';
+    src: url('../Fonts/Moulpali-Regular.ttf') format('woff2'),
+         url('../Fonts/Moulpali-Regular.ttf') format('woff'),
+         url('../Fonts/Moulpali-Regular.ttf') format('truetype');
+
+}
+
+
+
+
+/* Nav Section */
+ul{
+    background-color: rgba(14, 12, 12,0.8);
+    padding: 15px;
+    
+}
+
+.navlink{
+    display: inline-block;
+}
+
+.navlink a{
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 15px;
+    
+}
+
+.navlink a:hover{
+        background-color: rgb(190, 182, 182);
+    }
+
+
+
+/* Main Section */
+
+.CenterWord{
+    text-align: center;
+    padding: 5px 0;
+    margin: 0px 0px 20px 0;
+}
+
+.textcolor{
+    color: antiquewhite;
+    background-color: rgba(29, 25, 25, 0.7);
+}
+
+h1{
+    font-size: 150px;
+}
+
+h2{
+    font-size: 80px;
+}
+
+p{
+    font-size: 30px;
+}
+main{
+    background-image: url(../Images/ApocalypseBuild-13-scaled.jpg);
+    height: 100%;
+
+}
+
+.Table{
+    width: 80%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Table td{
+    border: 1px solid rgb(175, 155, 155);
+    text-align: center;
+}
+
+.border{
+    border: 2px solid rgb(175, 155, 155);
+}
+
+
+
+.container{
+    padding: 0 20px;
+}
+
+/*Footer Section */
+
+footer{
+    background-color: rgba(14, 12, 12, 0.8);
+}
+
+footer p{
+    text-align: center;
+    padding: 10px 0;
+}
