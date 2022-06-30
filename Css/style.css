@@ -44,11 +44,6 @@ ul li:first-child{
     height: 50px;
     pointer-events: none;
     float: left;
-    border: 1px solid red;
-    
-
-    
-   
 }
 
 .logo img{
