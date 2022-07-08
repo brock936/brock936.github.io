@@ -1,21 +1,13 @@
 
 /* Universal Styles */
-
-html{
-    font-size:16px;
-    font-family: 'Moulpali','Arial', sans-serif;
-}
 * {
     box-sizing: border-box;
     margin: 0;
     list-style-type:none;
     color: antiquewhite;
+    font-size:16px;
+    font-family: 'Moulpali','Arial', sans-serif;
   }
-.center{
-    text-align: center;
-   
-}
-  
 @font-face {
     font-family:'Moulpali';
     src: url('../Fonts/Moulpali-Regular.ttf') format('woff2'),
@@ -24,7 +16,11 @@ html{
 
 }
 
+.section{
+    margin-top: 5px;
+    margin-bottom: 5px;
 
+}
 
 
 /* Nav Section */
@@ -34,11 +30,17 @@ ul{
     
 }
 
-.navlink{
-    display: inline;
+nav{
+    text-align: center;
 }
 
-ul li:first-child{
+.navlink{
+    display: inline;
+    
+    
+}
+
+.navlink:first-child{
     
     width: 50px;
     height: 50px;
@@ -58,7 +60,8 @@ ul li:first-child{
     font-size: 25px;
     text-decoration: none;
     padding: 0 15px;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .navlink a:hover{
@@ -69,19 +72,42 @@ ul li:first-child{
 
 /* Main Section */
 
-.CenterWord{
-    text-align: center;
-    padding: 5px 0;
-    margin: 0px 0px 20px 0;
+.breadcrumb{
+    margin-bottom:5px;
 }
 
-.textcolor{
-    color: antiquewhite;
+.breadcrumb li{
+    display: inline;
+    padding-right: 5px;
+}
+
+.breadcrumb li a{
+    text-decoration: none;
+
+}
+
+.breadcrumb li+li::before{
+    content:" > ";
+
+}
+
+.breadcrumb a:hover{
+    color: red;
+}
+
+
+
+.bgcolor{
+
     background-color: rgba(29, 25, 25, 0.7);
 }
 
+
+
 h1{
     font-size: 150px;
+    text-align: center;
+    width: 100%;
 }
 
 h2{
@@ -116,16 +142,69 @@ main{
 
 
 .container{
-    padding: 0 20px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.btn{
+  height: 50px;
+  width: 200px;
+  
+
+}
+.button{
+
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(185, 46, 46);
+    border-radius: 5px;
+    text-shadow:0 -2px rgb(141, 5, 5);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;
+    background: rgb(194, 34, 5);
+    background: linear-gradient(rgba(221, 58, 17, 0.801), #dd643fb9);
+    text-shadow: 0 -2px #4e170d;
+
+}
+
+.button:hover{
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+  background: #3b0700;
+  background: linear-gradient(#ad4d14, #ff3c00);
+  border-color: #7e1300;
+  transition: background-color .15s, font-size .15s;
+  font-size: 18px;
+}
+
+.button:active{
+    margin-top: 2px;
+    margin-bottom: -2px;
+    box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    background: #f71202;
+    background: linear-gradient(#4e1a13, #ce1305);
+  }
+
+  .button2 {
+    background-color: rgb(21, 59, 224);
+    color: #fff;
+    border: 2px solid #0796f5;
+    border-radius: 10px;
+  }
+  
+  .button2:hover {
+    background-color: #4406f1;
+    transition: background-color .15s, font-size .15s;
+    font-size: 18px;
+  }
+  
+  .button2:active {
+    border-color: #fff;
+  }
 
 /*Footer Section */
 
-footer{
-    background-color: rgba(14, 12, 12, 0.8);
-}
-
 footer p{
-    text-align: center;
+
     padding: 10px 0;
 }
