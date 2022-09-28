@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To The Glory</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-icon">
+            <a href="#"> <img class="primary-icon" src="../4th_Project/Img/speed.png" alt="">  </a>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li class="list-item"><a href="#"> Our Service</a></li>
+            <li class="list-item"><a href="#"> About Us </a></li>
+            <li class="list-item"><a href="#"> Contact</a></li>
+            <li class="list-item"><a href="#"> Support</a></li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+ 
+</body>
+
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('nav-list');
+    toggleButton.addEventListener('click', () =>{
+        naviList.classList.toggle('active');
+    })
+</script>
+</html>
