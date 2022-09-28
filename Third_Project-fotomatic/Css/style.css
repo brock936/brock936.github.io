@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.bfont{
+    color:#4A4a4a;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-family: "Roboto-Mono-Regular", sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+}
+
+header .content{
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav li{
+    padding-left: 3.5rem;
+}
+
+header .logo{
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+header .icon{
+    width: 1rem;
+    padding-left: 0.75rem;
+}
+
+#sign-up-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 43.5rem;
+    background-image: url(../Imgs/banner-landingpage.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sign-up-cta{
+    position: relative;
+    top: 171px;
+    left: 10%;
+    padding: 0 5rem 2.5rem 5rem;
+    border: solid 1px #979797;
+    border-radius: 4px;
+    background-color: #9dc20b;
+}
+
+#sign-up-cta .content{
+    width: 25.625rem;
+    margin-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: white;
+
+}
+
+#sign-up-cta .cursive {
+    font-family: "Damion", cursive;
+}
+
+#sign-up-cta .striking {
+    font-family: "Rubik", sans-serif;
+    padding-bottom: 0.75rem;
+}
+
+.center{
+    text-align: center;
+}
+
+#sign-up-cta h1 {
+    font-size: 3.125rem;
+}
+
+#sign-up-cta h2 {
+    font-size: 2.25rem;
+}
