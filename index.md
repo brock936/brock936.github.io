@@ -14,3 +14,6 @@ Welcome to my capstone ePortfolio. This site showcases:
 - [Artifact 2: Algorithms & Data Structures](#)  
 - [Artifact 3: Databases](#)  
 - [Code Review Video](#) (YouTube — unlisted)
+
+
+theme: minima
