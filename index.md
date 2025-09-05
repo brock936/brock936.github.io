@@ -9,9 +9,7 @@ Welcome! This portfolio highlights secure software engineering, algorithmic rigo
 
 <div class="btn-row">
   <a class="btn" href="/self-assessment">Self-Assessment</a>
-  <a class="btn" href="/artifacts-software-design">Software Eng & Design</a>
-  <a class="btn" href="/artifacts-algorithms">Algorithms & Data Structures</a>
-  <a class="btn" href="/artifacts-databases">Databases</a>
+  <a class="btn" href="/artifacts">Artifacts</a>
   <a class="btn" href="/code-review">Code Review</a>
 </div>
 
