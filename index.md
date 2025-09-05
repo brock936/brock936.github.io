@@ -15,8 +15,8 @@ Welcome to my capstone ePortfolio. This site showcases:
 - **Code Review Video** (planned)
 
 ## Quick Links
-- [Professional Self-Assessment](#)
-- [Artifact 1: Software Engineering & Design](#)
-- [Artifact 2: Algorithms & Data Structures](#)
-- [Artifact 3: Databases](#)
+- [Professional Self-Assessment](self-assessment.md)
+- [Artifact 1: Software Engineering & Design](artifacts-software-design.md)
+- [Artifact 2: Algorithms & Data Structures](artifacts-algorithms.md)
+- [Artifact 3: Databases](artifacts-databases.md)
 - [Code Review Video](#)
