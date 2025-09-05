@@ -1,13 +1,17 @@
 ---
-layout: home
-title: Burak Tutkavul — CS-499 ePortfolio (Cybersecurity Focus)
+layout: default
+title: Home
 ---
 
 # Burak Tutkavul — CS-499 ePortfolio (Cybersecurity Focus)
 
 Welcome to my capstone ePortfolio. This site showcases:
-- **Professional Self-Assessment**
-- **Artifacts & Enhancements** (Software Eng & Design, Algorithms & DS, Databases)
+
+- **Professional Self-Assessment** (introduction to my skills and goals)
+- **Artifacts & Enhancements**:
+  - Software Engineering & Design (Android Inventory App)
+  - Algorithms & Data Structures (Advising System)
+  - Databases (MongoDB Dashboard)
 - **Code Review Video** (planned)
 
 ## Quick Links
