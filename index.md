@@ -17,3 +17,12 @@ Welcome! This portfolio highlights secure software engineering, algorithmic rigo
 - **Professional Self-Assessment**
 - **Artifacts & Enhancements** with before/after code and narratives
 - **Code Review Video** (security-focused walkthrough)
+
+
+
+<!-- content -->
+
+---
+
+**Contact:** [LinkedIn](#) · [GitHub](https://github.com/brock936)  
+_Last updated:_ {{ site.time | date: "%B %d, %Y" }}
