@@ -1,6 +1,5 @@
 title: Burak Tutkavul — CS-499 ePortfolio
 description: Cybersecurity-focused capstone portfolio
-remote_theme: pages-themes/cayman@v0.2.0
+theme: minima
 plugins:
-  - jekyll-remote-theme
-  - jekyll-sitemap       
+  - jekyll-sitemap
