@@ -1,6 +1,12 @@
-# _config.yml
 title: Burak Tutkavul — CS-499 ePortfolio
 description: Cybersecurity-focused capstone portfolio
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
+
+# Optional: show top nav links when you create these pages:
+header_pages:
+  - self-assessment.md
+  - artifacts-software-design.md
+  - artifacts-algorithms.md
+  - artifacts-databases.md
