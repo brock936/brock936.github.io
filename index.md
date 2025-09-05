@@ -5,18 +5,17 @@ title: Home
 
 # Burak Tutkavul — CS-499 ePortfolio (Cybersecurity Focus)
 
-Welcome to my capstone ePortfolio. This site showcases:
+Welcome! This portfolio highlights secure software engineering, algorithmic rigor, and database security learned in SNHU’s CS program.
 
-- **Professional Self-Assessment** (introduction to my skills and goals)
-- **Artifacts & Enhancements**:
-  - Software Engineering & Design (Android Inventory App)
-  - Algorithms & Data Structures (Advising System)
-  - Databases (MongoDB Dashboard)
-- **Code Review Video** (planned)
+<div class="btn-row">
+  <a class="btn" href="/self-assessment">Self-Assessment</a>
+  <a class="btn" href="/artifacts-software-design">Software Eng & Design</a>
+  <a class="btn" href="/artifacts-algorithms">Algorithms & Data Structures</a>
+  <a class="btn" href="/artifacts-databases">Databases</a>
+  <a class="btn" href="/code-review">Code Review</a>
+</div>
 
-## Quick Links
-- [Professional Self-Assessment](self-assessment.md)
-- [Artifact 1: Software Engineering & Design](artifacts-software-design.md)
-- [Artifact 2: Algorithms & Data Structures](artifacts-algorithms.md)
-- [Artifact 3: Databases](artifacts-databases.md)
-- [Code Review Video](#)
+## What you'll find
+- **Professional Self-Assessment**
+- **Artifacts & Enhancements** with before/after code and narratives
+- **Code Review Video** (security-focused walkthrough)
