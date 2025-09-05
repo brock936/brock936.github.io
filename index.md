@@ -1,4 +1,4 @@
-# Burak Tutkavul — CS-499 ePortfolio (Cybersecurity Focus)
+# Burak Tutkavul - CS-499 ePortfolio (Cybersecurity Focus)
 
 Welcome to my capstone ePortfolio. This site showcases:
 - **Professional Self-Assessment** (introduction to my skills and goals)
