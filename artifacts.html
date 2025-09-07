@@ -33,12 +33,34 @@
     <section class="artifact-list grid three">
       <!-- Artifact 1 -->
       <article class="card">
-        <h2>Artemis Financial – Secure Communications (Java)</h2>
-        <p>Refactored a Spring Boot app to enforce HTTPS/TLS, generate/manage certificates, add checksum validation, and harden dependencies with OWASP.</p>
-        <ul class="meta">
-          <li><strong>Tech:</strong> Java, Spring Boot, OpenSSL/Keytool</li>
-          <li><strong>Skills:</strong> Security, DevSecOps, Design</li>
+        <h2>Mobile Architecture and Programming</h2>
+        <h3>Inventory Tracking App (Android/Java)</h3>
+        <p>
+          Mobile application that helps users sign in and manage item quantities with a simple, accessible interface.
+        </p>
+
+        <p><strong>What I did</strong></p>
+        <ul>
+          <li>Added a login screen backed by SQLite and basic session handling.</li>
+          <li>Stored and updated items locally; showed inventory in a grid with add, edit, and delete actions.</li>
+          <li>Implemented input checks to prevent bad entries and crashes.</li>
+          <li>Sent low stock SMS notifications after the user granted permission.</li>
         </ul>
+
+        <p><strong>Planned enhancements</strong></p>
+        <ul>
+          <li>Refactor to MVVM with a Repository and Room for the data layer to improve maintainability.</li>
+          <li>Add secure sign-in with hashed credentials and encrypted local storage.</li>
+          <li>Introduce role based permissions so only admins can delete items.</li>
+          <li>Polish UI with Material patterns and stronger accessibility support.</li>
+          <li>Add unit and UI tests with continuous integration for reliable releases.</li>
+        </ul>
+
+        <ul class="meta">
+          <li><strong>Tech:</strong> Java, Android, SQLite/Room</li>
+          <li><strong>Skills:</strong> Software engineering, mobile UX, testing, security</li>
+        </ul>
+
         <div class="actions">
           <a class="btn" href="assets/docs/artifact1.pdf" target="_blank" rel="noopener">PDF</a>
           <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
@@ -47,12 +69,34 @@
 
       <!-- Artifact 2 -->
       <article class="card">
-        <h2>Grazioso Salvare – MongoDB Dashboard (Python)</h2>
-        <p>Interactive dashboard with CRUD functionality, authentication, and data visualizations to support real client queries and analysis.</p>
-        <ul class="meta">
-          <li><strong>Tech:</strong> Python, MongoDB, Dash</li>
-          <li><strong>Skills:</strong> Data, Design</li>
+        <h2>Data Structures and Algorithms</h2>
+        <h3>Course Advising Program (C++)</h3>
+        <p>
+          Command-line tool that organizes course information and makes it easy to list classes and view details.
+        </p>
+
+        <p><strong>What I did</strong></p>
+        <ul>
+          <li>Loaded course data from a CSV file.</li>
+          <li>Stored courses in a Binary Search Tree keyed by course ID.</li>
+          <li>Printed an alphanumeric list of courses using in order traversal.</li>
+          <li>Displayed details for a selected course, including title and prerequisites.</li>
         </ul>
+
+        <p><strong>Planned enhancements</strong></p>
+        <ul>
+          <li>Add a direct lookup table in addition to the tree so finding a course by ID is instant.</li>
+          <li>Replace recursive listings with an iterative version to handle larger catalogs safely.</li>
+          <li>Model prerequisites as a small graph and check for cycles to prevent invalid plans.</li>
+          <li>Validate inputs from the CSV and report errors clearly to avoid bad data.</li>
+          <li>Write focused tests and small timing checks to show real improvements.</li>
+        </ul>
+
+        <ul class="meta">
+          <li><strong>Tech:</strong> C++</li>
+          <li><strong>Skills:</strong> Problem solving, data organization, planning logic</li>
+        </ul>
+
         <div class="actions">
           <a class="btn" href="assets/docs/artifact2.pdf" target="_blank" rel="noopener">PDF</a>
           <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
@@ -60,13 +104,34 @@
       </article>
 
       <!-- Artifact 3 -->
-      <article class="card">
-        <h2>Inventrack – Inventory Android App (Java)</h2>
-        <p>Mobile app with login (SQLite), CRUD in grid layout, SMS permissions/notifications, and accessibility-minded UX refinements.</p>
-        <ul class="meta">
-          <li><strong>Tech:</strong> Java, Android, SQLite</li>
-          <li><strong>Skills:</strong> Android, Security, Design</li>
+     <article class="card">
+        <h2>Client/Server Development</h2>
+        <h3>MongoDB Dashboard (Python/Dash)</h3>
+        <p>
+          Web dashboard that authenticates users, provides create read update and delete operations, and visualizes results for faster decisions.
+        </p>
+
+        <p><strong>What I did</strong></p>
+        <ul>
+          <li>Connected to MongoDB collections and loaded data into interactive tables and charts.</li>
+          <li>Built authenticated CRUD workflows with filtering and search.</li>
+          <li>Used aggregation queries to present summaries and trends.</li>
         </ul>
+
+        <p><strong>Planned enhancements</strong></p>
+        <ul>
+          <li>Add role based access so permissions match each user’s responsibilities.</li>
+          <li>Create compound indexes and server side pagination for smoother performance on larger data sets.</li>
+          <li>Expose a small REST API and validate inputs to keep data clean.</li>
+          <li>Containerize with Docker and enable HTTPS to support secure deployment.</li>
+          <li>Add basic observability such as timing and query counts to monitor health.</li>
+        </ul>
+
+        <ul class="meta">
+          <li><strong>Tech:</strong> Python, Dash, MongoDB</li>
+          <li><strong>Skills:</strong> Databases, data visualization, API design, deployment</li>
+        </ul>
+
         <div class="actions">
           <a class="btn" href="assets/docs/artifact3.pdf" target="_blank" rel="noopener">PDF</a>
           <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
