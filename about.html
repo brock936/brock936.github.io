@@ -1,44 +1,100 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About • Burak Tutkavul</title>
-<meta name="description" content="About and contact page for Burak Tutkavul." />
-<link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Burak Tutkavul</title>
+  <meta name="description" content="About and contact page for Burak Tutkavul." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-<header class="site-header" role="banner">
-<nav class="nav" aria-label="Primary">
-<a class="logo" href="/">BT</a>
-<button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" id="navToggle">Menu</button>
-<ul id="navMenu" class="nav__menu">
-<li><a href="/">Home</a></li>
-<li><a href="artifacts.html">Artifacts</a></li>
-<li><a href="about.html" aria-current="page">About</a></li>
-<li><button id="themeToggle" class="btn btn--ghost" aria-pressed="false">Toggle Theme</button></li>
-</ul>
-</nav>
-</header>
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artifacts.html">Artifacts</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
+<main id="content" tabindex="-1" class="container">
+  <section class="page-header">
+    <h1>About</h1>
+    <p class="lead">Based in San Antonio, I build secure, maintainable software and love turning requirements into clean, testable solutions.</p>
+  </section>
 
-<main class="container" id="content" tabindex="-1">
-<h1>About</h1>
-<p>Based in San Antonio, I build secure, maintainable software and love turning requirements into clean, testable solutions.</p>
-<h2>Contact</h2>
-<ul>
-<li>Email: <a href="mailto:bt935@hotmail.com">bt935@hotmail.com</a></li>
-<li>GitHub: <a href="https://github.com/brock936" target="_blank" rel="noopener">github.com/brock936</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/btutkavul/" target="_blank" rel="noopener">linkedin.com/in/btutkavul</a></li>
-</ul>
+  <!-- One mega card with all sections -->
+  <article class="about-card about-card--mega" aria-labelledby="bio-heading">
+  <section>
+    <h3 id="bio-heading">Bio</h3>
+    <p class="lead">
+      My name is Burak Tutkavul. I am 32 years old and originally from Türkiye, now living in San Antonio, Texas with my family.
+      I bring 8 years of professional experience in IT and software support, and I am currently completing my B.S. in Computer Science at SNHU.
+    </p>
+    <p>
+      Along my journey, I have earned several industry-recognized certifications including CompTIA A+, Network+, Security+, and ITF+.
+      These certifications, together with my academic work, show my commitment to building a strong foundation in both technology and security.
+      My portfolio projects highlight my ability to apply these skills in practice by delivering secure, maintainable, and testable software solutions.
+    </p>
+  </section>
+
+  <section>
+    <h3>What I Do</h3>
+    <p>
+      I build secure, maintainable software and strengthen systems against modern threats. My background spans Active Directory,
+      firewall basics, operating system patching, endpoint security, quality assurance and testing, and SQL data work.
+      These skills are complemented by recent software projects that emphasize secure defaults and testability.
+    </p>
+  </section>
+
+  <section>
+    <h3>Goals</h3>
+    <p>
+      My short-term goal is to begin a cybersecurity career in a Security Operations Center or platform defense role where I can apply
+      detection, incident response, and threat analysis skills that are highly valued in the U.S. job market.
+      In the long term, I aspire to grow into red team operations, applying offensive security techniques to strengthen defenses
+      through realistic simulations.
+    </p>
+  </section>
+
+  <section>
+    <h3>Recent Projects</h3>
+    <ul>
+      <li><strong>Secure Communications (Java/Spring):</strong> Enforced HTTPS/TLS, managed certificates, and added checksum verification.</li>
+      <li><strong>MongoDB Dashboard (Python/Dash):</strong> Authenticated CRUD with data visualizations for client questions.</li>
+      <li><strong>Inventrack Android App (Java/SQLite):</strong> Developed a mobile inventory app with login, grid CRUD, and SMS notifications.</li>
+    </ul>
+    <div class="actions">
+      <a class="btn" href="assets/docs/artifact1.pdf" target="_blank" rel="noopener">Secure Comms PDF</a>
+      <a class="btn" href="assets/docs/artifact2.pdf" target="_blank" rel="noopener">Dashboard PDF</a>
+      <a class="btn" href="assets/docs/artifact3.pdf" target="_blank" rel="noopener">Inventrack PDF</a>
+    </div>
+  </section>
+  </article>
+
+  <!-- Contact card (separate, centered) -->
+  <section class="contact-wrap">
+    <article class="contact-card" aria-labelledby="contact-heading">
+        <h3 id="contact-heading">Contact</h3>
+        <p><strong>Email:</strong> <a href="mailto:bt935@hotmail.com">bt935@hotmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/brock936" target="_blank" rel="noopener">github.com/brock936</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/btutkavul/" target="_blank" rel="noopener">linkedin.com/in/btutkavul</a></p>
+  </article>
+</section>
+
 </main>
 
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Burak Tutkavul • <a href="https://github.com/brock936" rel="noopener" target="_blank">GitHub</a></p>
+  </footer>
 
-<footer class="site-footer">
-<p>© <span id="year"></span> Burak Tutkavul • <a href="https://github.com/brock936" rel="noopener" target="_blank">GitHub</a></p>
-</footer>
-
-
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

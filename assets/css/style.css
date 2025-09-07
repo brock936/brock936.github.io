@@ -263,3 +263,91 @@ main { flex: 1; }
   }
 }
 /****************************************/
+
+
+/* ===== About layout ===== */
+
+/* About card */
+.about-card{
+  background: var(--surface, #fff);
+  border-radius: var(--radius, 16px);
+  box-shadow: 0 8px 24px var(--shadow, rgba(0,0,0,.15));
+  padding: 1.25rem 1.25rem;
+}
+
+.about-card--mega{
+  margin: 0 auto 1.5rem;
+  max-width:  1500px;
+  padding: 1.5rem 1.5rem;
+}
+
+
+/* Make text a bit more readable on large cards */
+.about-card--mega p,
+.about-card--mega li{
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+@media (min-width: 992px){
+  .about-card--mega{
+    padding: 3rem 3rem;   /* even larger padding on desktop */
+  }
+}
+
+
+@media (min-width: 768px){
+  .about-card--mega{ padding: 2rem 2rem; }
+}
+
+/* Center all section headings inside the mega card */
+.about-card--mega h3{
+  text-align: center;
+  margin: .25rem 0 .75rem;
+  font-weight: 600; /* Roboto 600 like other pages */
+}
+
+/* Section separators inside the mega card */
+.about-card--mega section + section{
+  border-top: 1px solid rgba(0,0,0,.06);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px){
+  .about-card--mega section + section{
+    padding-top: 1.25rem;
+    margin-top: 1.25rem;
+  }
+}
+
+/* Lists & actions */
+.about-card--mega ul{
+  padding-left: 1.25rem;
+  margin: .5rem 0 1rem;
+}
+
+.about-card--mega .actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+}
+
+/* Contact card (already centered previously; keep consistent) */
+.contact-wrap{
+  margin: 0 auto 3rem;
+  max-width: 720px;
+  padding: 0 1rem;
+}
+
+.contact-card{
+  background: var(--surface, #fff);
+  border-radius: var(--radius, 16px);
+  box-shadow: 0 8px 24px var(--shadow, rgba(0,0,0,.15));
+  padding: 1.25rem 1.25rem;
+  text-align: center;
+}
+
+.contact-card h3{ margin: .25rem 0 .75rem; font-weight: 600; }
