@@ -1,0 +1,265 @@
+/* ===============================
+   THEME & TOKENS
+================================= */
+:root {
+  --bg:#f4f7fa;           /* page background */
+  --surface:#ffffff;      /* cards/strips */
+  --text:#1e293b;         /* main text */
+  --muted:#64748b;        /* secondary text */
+  --accent:#0ea5e9;       /* brand accent */
+  --nav-bg:#1e293b;       /* navbar */
+  --footer-bg:#111827;    /* footer */
+  --ring:rgba(14,165,233,.35);
+  --shadow:rgba(0,0,0,.15);
+  --radius:16px;
+  --container:max(720px, 56%);
+}
+
+/* Optional dark theme hook */
+[data-theme="dark"] {
+  --bg:#0b0c10;
+  --surface:#111318;
+  --text:#e6e6e6;
+  --muted:#a7a7a7;
+  --accent:#5eead4;
+  --ring:rgba(94,234,212,.35);
+  --shadow:rgba(0,0,0,.35);
+}
+
+/* ===============================
+   BASE / RESET
+================================= */
+* { box-sizing: border-box; }
+html { height: 100%; }
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-weight: 400;        /* body text regular */
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;        /* headings medium */
+  margin-top: 0;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--accent); text-decoration: none; }
+a:focus-visible,
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.container { width: min(1100px, 92%); margin-inline: auto; }
+
+.section-title {
+  text-align: center;
+  margin: 2rem 0 1.25rem;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--nav-bg);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(6px);
+}
+
+.nav {
+  display: flex; justify-content: center; align-items: center;
+  gap: .75rem; list-style: none; margin: 0; padding: .75rem 1rem;
+}
+.nav li { list-style: none; }
+.nav a {
+  color: #f1f5f9;
+  font-weight: 600;             /* nav semi-bold */
+  padding: .45rem .85rem;
+  border-radius: .5rem;
+}
+.nav a:hover { background: rgba(255,255,255,.15); }
+.nav a[aria-current="page"] {
+  box-shadow: inset 0 -2px 0 0 #fff;
+}
+
+/* ===============================
+   HERO
+================================= */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  width: min(860px,92%);
+  margin-inline: auto;
+}
+.hero h1 { font-size: 2.5rem; margin: .25rem 0 .75rem; }
+.hero .lead {
+  color: var(--muted);
+  max-width: var(--container);
+  margin-inline: auto;
+}
+.hero__media img {
+  width: 160px; height: 160px; border-radius: 50%;
+  object-fit: cover; margin: 1.5rem auto 0;
+  box-shadow: 0 8px 20px var(--shadow);
+}
+.hero__cta {
+  display: flex; justify-content: center; gap: .75rem; margin-top: 1rem;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+.btn {
+  display: inline-block;
+  background: var(--accent); color: #fff;
+  padding: .65rem 1rem; border-radius: 999px;
+  font-weight: 600;            /* buttons semi-bold */
+  box-shadow: 0 10px 24px var(--ring);
+  transition: transform .15s ease, opacity .15s ease;
+}
+.btn:hover { transform: translateY(-1px); opacity: .95; }
+.btn--ghost {
+  background: transparent; color: var(--accent);
+  border: 1px solid var(--accent); box-shadow: none;
+}
+
+/* ===============================
+   COMPETENCY (CARDS)
+================================= */
+.highlights { margin-top: 2rem; }
+.highlights .grid {
+  display: grid; gap: 1rem;
+  width: min(1100px, 92%); margin-inline: auto;
+  justify-items: center;
+}
+.grid.three { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.card {
+  background: var(--surface);
+  padding: 1.25rem; border-radius: var(--radius);
+  box-shadow: 0 8px 18px var(--shadow);
+  text-align: center;
+}
+.card p { color: var(--muted); margin: .5rem 0 0; }
+.card:hover { transform: translateY(-2px); transition: transform .15s ease; }
+
+/* ===============================
+   CTA STRIP
+================================= */
+.cta-strip {
+  background: var(--surface);
+  width: min(800px,92%); margin: 2rem auto 0;
+  padding: 1.1rem; border-radius: var(--radius);
+  text-align: center; box-shadow: 0 6px 14px var(--shadow);
+}
+
+/* ===============================
+   FOOTER (sticky to bottom)
+================================= */
+main { flex: 1; }
+.site-footer {
+  background: var(--footer-bg);
+  color: #d1d5db;
+  text-align: center;
+  padding: 1rem;
+  font-size: .9rem;
+  margin-top: auto;
+}
+.site-footer a { color: var(--accent); }
+
+/* ===============================
+   RESPONSIVE TWEAKS
+================================= */
+@media (max-width:700px) {
+  .hero h1 { font-size: 2rem; }
+  .hero__media img { width: 140px; height: 140px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+
+
+/* -------- Artifacts page -------- */
+
+/****************************************/
+
+.page-header {
+  text-align: center;
+  margin: 1.5rem auto 2rem; /* reduce top space, keep spacing below */
+  max-width: 800px;
+}
+
+.page-header h1 {
+  margin: 0 0 .5rem;
+}
+
+.page-header .lead {
+  margin: 0;
+  color: var(--muted, #555);
+  font-size: 1.05rem;
+}
+
+
+/* -------- Artifacts row cards -------- */
+.artifact-list {
+  margin: 0 auto;
+  max-width: 1600px;      /* keeps artifacts centered */
+  padding: 0 2rem;      /* margin from edges */
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Card styling */
+.artifact-list .card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.card__title {
+  margin: 0;
+}
+
+/* meta list tidy */
+.meta {
+  list-style: none;
+  margin: .5rem 0 1rem;
+  padding: 0;
+}
+.meta li + li {
+  margin-top: .25rem;
+}
+
+/* actions (buttons) */
+.actions {
+  display: flex;
+  justify-content: center; /* center buttons */
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+/* responsive grid */
+@media (max-width: 960px) {
+  .artifact-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .artifact-list {
+    grid-template-columns: 1fr;
+  }
+}
+/****************************************/
