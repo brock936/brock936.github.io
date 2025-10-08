@@ -26,7 +26,10 @@
   <main id="content" tabindex="-1">
     <section class="hero">
       <h1>Hi, I’m <span class="accent">Burak Tutkavul</span>.</h1>
-      <p class="lead">CS student & security-minded builder. This portfolio highlights three capstone artifacts, each refactored to demonstrate program competencies and professional growth.</p>
+      <p class="lead">
+        CS student and security-minded builder. This portfolio highlights three capstone artifacts refactored to
+        showcase secure design, clean data structures, and practical dashboards.
+      </p>
       <div class="hero__media">
         <img src="assets/img/avatar.jpg" alt="Portrait of Burak Tutkavul" />
       </div>
@@ -39,23 +42,42 @@
     <section class="highlights">
       <h2 class="section-title">Competency Highlights</h2>
       <div class="grid three">
+        <!-- Software Engineering & Design -->
         <article class="card">
-           <h3>Software Engineering &amp; Design</h3>
-           <p>
-             The application provides a login screen backed by SQLite, stores and updates inventory items locally, shows the inventory in a grid layout, supports add edit delete actions with input validation, and sends low stock SMS notifications after the user grants permission.
-           </p>
+          <h3>Software Engineering &amp; Design</h3>
+          <p>
+            <strong>InvenTrack (Android / Java):</strong> secure login/registration with
+            PBKDF2-hashed credentials and <em>EncryptedSharedPreferences</em>, role-based UI
+            (admin vs. viewer), and a SQLite-backed inventory grid with validated CRUD
+            (unique numeric SKU, quantity limits). Includes an SMS alerts settings screen
+            with runtime permission handling and improved accessibility styling.
+          </p>
         </article>
+
+        <!-- Algorithms & Data Structures -->
         <article class="card">
           <h3>Algorithms &amp; Data Structures</h3>
-            <p>
-             The application loads course data from a CSV file, stores courses in a Binary Search Tree (BST) keyed by course ID, prints an alphanumeric sorted list of courses via in-order traversal, and displays details (title and prerequisites) for a selected course.
-            </p>
+          <p>
+            <strong>Course Advising (C++):</strong> CSV import into a Binary Search Tree
+            keyed by course ID with <em>iterative</em> in-order traversal for alphanumeric
+            output, plus a supplemental <code>unordered_map</code> index for O(1) lookups.
+            Robust input validation for malformed rows and documented Big-O analysis for
+            load, search, and traversal. Clean header/source layout and commented functions
+            for maintainability.
+          </p>
         </article>
+
+        <!-- Databases & Visualization -->
         <article class="card">
           <h3>Databases &amp; Visualization</h3>
-            <p>
-              The application loads data from MongoDB collections, authenticates users, exposes create read update and delete operations through a dashboard interface, supports filtering and search for larger data sets, and presents results as interactive tables and charts built from aggregation queries.
-            </p>
+          <p>
+            <strong>Grazioso Dashboard (Python / Dash):</strong> TLS-validated connection to
+            MongoDB Atlas with read-only RBAC at runtime, JSON Schema validation on
+            <code>aac.animals</code>, and secrets managed via environment variables. Interactive
+            DataTable, charts, and a map (with Austin fallback) support fast filtering and
+            exploration. PEP-8 compliant callbacks and an Admin Tools panel for schema/index
+            viewing with RO-safe callbacks.
+          </p>
         </article>
       </div>
     </section>
