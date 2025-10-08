@@ -31,39 +31,42 @@
 
     <!-- Row of centered cards -->
     <section class="artifact-list grid three">
+
       <!-- Artifact 1 -->
       <article class="card">
         <h2>Mobile Architecture and Programming</h2>
-        <h3>Inventory Tracking App (Android/Java)</h3>
+        <h3>Inventory Tracking App (Android / Java – InvenTrack)</h3>
         <p>
           Mobile application that helps users sign in and manage item quantities with a simple, accessible interface.
         </p>
 
         <p><strong>What I did</strong></p>
         <ul>
-          <li>Added a login screen backed by SQLite and basic session handling.</li>
-          <li>Stored and updated items locally; showed inventory in a grid with add, edit, and delete actions.</li>
-          <li>Implemented input checks to prevent bad entries and crashes.</li>
-          <li>Sent low stock SMS notifications after the user granted permission.</li>
+          <li>Built login / registration backed by <strong>SQLite with EncryptedSharedPreferences</strong> for secure session handling.</li>
+          <li>Added password policy and PBKDF2-hashed credentials with per-user salt.</li>
+          <li>Implemented <strong>role-based access</strong>: the first registered user becomes admin; admins can add, update, delete, and send SMS alerts; regular users are read-only.</li>
+          <li>Stored and updated items locally in a <strong>grid-style inventory</strong> with search, add, edit, and delete actions.</li>
+          <li>Added <strong>SKU-based validation</strong> (max 12 digits, unique index), quantity limits, and input checks to prevent crashes.</li>
+          <li>Added “Remember username” option and improved login error handling.</li>
+          <li>Built an <strong>SMS alert settings screen</strong> with runtime permission handling, “Don’t ask again” flow, and customizable templates.</li>
+          <li>Polished UI with branded <strong>InvenTrack</strong> theme, orange Material buttons, logo on login screen, and better accessibility.</li>
         </ul>
 
         <p><strong>Planned enhancements</strong></p>
         <ul>
-          <li>Refactor to MVVM with a Repository and Room for the data layer to improve maintainability.</li>
-          <li>Add secure sign-in with hashed credentials and encrypted local storage.</li>
-          <li>Introduce role based permissions so only admins can delete items.</li>
-          <li>Polish UI with Material patterns and stronger accessibility support.</li>
-          <li>Add unit and UI tests with continuous integration for reliable releases.</li>
+          <li>Expand test coverage with <strong>unit and UI tests</strong> using Espresso/JUnit for more reliable releases.</li>
+          <li>Add cloud sync option so admins can back up inventory to a remote database.</li>
+          <li>Introduce analytics to log low-stock events for reporting.</li>
         </ul>
 
         <ul class="meta">
-          <li><strong>Tech:</strong> Java, Android, SQLite/Room</li>
-          <li><strong>Skills:</strong> Software engineering, mobile UX, testing, security</li>
+          <li><strong>Tech:</strong> Java, Android API 34, SQLite / Room, EncryptedSharedPreferences, PBKDF2</li>
+          <li><strong>Skills:</strong> Mobile UX, secure sign-in, MVVM architecture, role-based access, testing</li>
         </ul>
 
         <div class="actions">
           <a class="btn" href="assets/docs/artifact1.pdf" target="_blank" rel="noopener">PDF</a>
-          <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="https://github.com/brock936/InvenTrack" target="_blank" rel="noopener">GitHub</a>
         </div>
       </article>
 
@@ -77,72 +80,77 @@
 
         <p><strong>What I did</strong></p>
         <ul>
-          <li>Loaded course data from a CSV file.</li>
-          <li>Stored courses in a Binary Search Tree keyed by course ID.</li>
-          <li>Printed an alphanumeric list of courses using in order traversal.</li>
-          <li>Displayed details for a selected course, including title and prerequisites.</li>
+          <li>Loaded course data from a CSV file into an in-memory <strong>Binary Search Tree</strong> keyed by course ID.</li>
+          <li>Implemented <strong>iterative in-order traversal</strong> to print an <strong>alphanumerically sorted</strong> list of courses.</li>
+          <li>Displayed course details (ID, name, prerequisites) for a selected course.</li>
+          <li>Added <strong>error handling</strong> for malformed rows and verified input integrity during loads.</li>
+          <li>Enhanced traversal performance by combining a <strong>BST lookup with an unordered_map index</strong> for O(1) search.</li>
+          <li>Documented runtime complexity (Big-O) for each operation in the project report.</li>
         </ul>
 
         <p><strong>Planned enhancements</strong></p>
         <ul>
-          <li>Add a direct lookup table in addition to the tree so finding a course by ID is instant.</li>
-          <li>Replace recursive listings with an iterative version to handle larger catalogs safely.</li>
-          <li>Model prerequisites as a small graph and check for cycles to prevent invalid plans.</li>
-          <li>Validate inputs from the CSV and report errors clearly to avoid bad data.</li>
-          <li>Write focused tests and small timing checks to show real improvements.</li>
+          <li>Add a <strong>direct-lookup table</strong> to speed up repeated queries in very large catalogs.</li>
+          <li>Expand <strong>cycle-detection</strong> in prerequisites to reject invalid course plans.</li>
+          <li>Add <strong>unit tests</strong> for insert/search/remove operations to prevent regressions.</li>
         </ul>
 
         <ul class="meta">
-          <li><strong>Tech:</strong> C++</li>
-          <li><strong>Skills:</strong> Problem solving, data organization, planning logic</li>
+          <li><strong>Tech:</strong> C++17</li>
+          <li><strong>Skills:</strong> Algorithms, data organization, iterative traversal, error handling, Big-O analysis</li>
         </ul>
 
         <div class="actions">
           <a class="btn" href="assets/docs/artifact2.pdf" target="_blank" rel="noopener">PDF</a>
-          <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="https://github.com/brock936/CourseAdvising" target="_blank" rel="noopener">GitHub</a>
         </div>
       </article>
 
       <!-- Artifact 3 -->
-     <article class="card">
-        <h2>Client/Server Development</h2>
-        <h3>MongoDB Dashboard (Python/Dash)</h3>
+      <article class="card">
+        <h2>Client-Server Development</h2>
+        <h3>MongoDB Dashboard (Python / Dash – Grazioso Salvare)</h3>
         <p>
-          Web dashboard that authenticates users, provides create read update and delete operations, and visualizes results for faster decisions.
+          Web dashboard that authenticates users, provides CRUD workflows, visualizes outcomes on tables, charts, and maps, and demonstrates secure database practices.
         </p>
 
         <p><strong>What I did</strong></p>
         <ul>
-          <li>Connected to MongoDB collections and loaded data into interactive tables and charts.</li>
-          <li>Built authenticated CRUD workflows with filtering and search.</li>
-          <li>Used aggregation queries to present summaries and trends.</li>
+          <li>Connected securely to <strong>MongoDB Atlas</strong> using <strong>TLS-validated user login</strong> and read-only runtime role (RO).</li>
+          <li>Built <strong>interactive Dash dashboard</strong> with radio-button filters, DataTable, map fallback to Austin, and bar charts for outcomes.</li>
+          <li>Added <strong>Admin Tools panel</strong> with schema and index viewers (RO-safe callbacks).</li>
+          <li>Configured <strong>JSON Schema validation</strong> for <code>aac.animals</code> collection and verified expected rejection on bad input.</li>
+          <li>Proved <strong>RBAC enforcement</strong>: RO user denied inserts/updates/deletes at runtime.</li>
+          <li>Customized branding with <code>assets/grazioso_logo.png</code>, light layout styling, and external port 8052 launch in JupyterLab.</li>
         </ul>
 
         <p><strong>Planned enhancements</strong></p>
         <ul>
-          <li>Add role based access so permissions match each user’s responsibilities.</li>
-          <li>Create compound indexes and server side pagination for smoother performance on larger data sets.</li>
-          <li>Expose a small REST API and validate inputs to keep data clean.</li>
-          <li>Containerize with Docker and enable HTTPS to support secure deployment.</li>
-          <li>Add basic observability such as timing and query counts to monitor health.</li>
+          <li>Expose a <strong>small REST API</strong> for external analytics clients.</li>
+          <li>Containerize with <strong>Docker + HTTPS</strong> for secure deployment.</li>
+          <li>Add <strong>observability metrics</strong> (timing, query counts) to monitor dashboard health.</li>
+          <li>Create <strong>compound indexes</strong> and server-side pagination for smoother performance on large data sets.</li>
         </ul>
 
         <ul class="meta">
-          <li><strong>Tech:</strong> Python, Dash, MongoDB</li>
-          <li><strong>Skills:</strong> Databases, data visualization, API design, deployment</li>
+          <li><strong>Tech:</strong> Python 3.12, Dash, MongoDB Atlas (TLS)</li>
+          <li><strong>Skills:</strong> API design, schema validation, RBAC security, data visualization, secure deployment</li>
         </ul>
 
         <div class="actions">
           <a class="btn" href="assets/docs/artifact3.pdf" target="_blank" rel="noopener">PDF</a>
-          <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="https://github.com/brock936/GraziosoDashboard" target="_blank" rel="noopener">GitHub</a>
         </div>
       </article>
+
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© <span id="year"></span> Burak Tutkavul • <a href="https://github.com/brock936" rel="noopener" target="_blank">GitHub</a></p>
+    <p>© <span id="year"></span> Burak Tutkavul • 
+      <a href="https://github.com/brock936" rel="noopener" target="_blank">GitHub</a>
+    </p>
   </footer>
 
   <script src="assets/js/main.js"></script>
