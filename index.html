@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Burak Tutkavul • ePortfolio</title>
-  <meta name="description" content="ePortfolio of Burak Tutkavul – selected academic projects, reflections, and competencies." />
+  <meta name="description" content="Burak Tutkavul – Security-Minded Software Engineer • B.S. Computer Science (SNHU 2025) • Aspiring Cybersecurity Professional – showcasing secure design, algorithms, and dashboards.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
@@ -24,11 +24,13 @@
   </header>
 
   <main id="content" tabindex="-1">
+    <!-- HERO -->
     <section class="hero">
       <h1>Hi, I’m <span class="accent">Burak Tutkavul</span>.</h1>
       <p class="lead">
-        CS student and security-minded builder. This portfolio highlights three capstone artifacts refactored to
-        showcase secure design, clean data structures, and practical dashboards.
+        <strong>Security-Minded Software Engineer • B.S. Computer Science (SNHU 2025) • Aspiring Cybersecurity Professional</strong>.  
+        This portfolio highlights three capstone artifacts that demonstrate secure design,
+        data-structure expertise, and client-server development — the foundation for a cybersecurity-focused career.
       </p>
       <div class="hero__media">
         <img src="assets/img/avatar.jpg" alt="Portrait of Burak Tutkavul" />
@@ -39,16 +41,18 @@
       </div>
     </section>
 
+    <!-- COMPETENCY HIGHLIGHTS -->
     <section class="highlights">
       <h2 class="section-title">Competency Highlights</h2>
       <div class="grid three">
+
         <!-- Software Engineering & Design -->
         <article class="card">
           <h3>Software Engineering &amp; Design</h3>
           <p>
             <strong>InvenTrack (Android / Java):</strong> secure login/registration with
             PBKDF2-hashed credentials and <em>EncryptedSharedPreferences</em>, role-based UI
-            (admin vs. viewer), and a SQLite-backed inventory grid with validated CRUD
+            (admin vs viewer), and a SQLite-backed inventory grid with validated CRUD
             (unique numeric SKU, quantity limits). Includes an SMS alerts settings screen
             with runtime permission handling and improved accessibility styling.
           </p>
@@ -73,23 +77,28 @@
           <p>
             <strong>Grazioso Dashboard (Python / Dash):</strong> TLS-validated connection to
             MongoDB Atlas with read-only RBAC at runtime, JSON Schema validation on
-            <code>aac.animals</code>, and secrets managed via environment variables. Interactive
-            DataTable, charts, and a map (with Austin fallback) support fast filtering and
-            exploration. PEP-8 compliant callbacks and an Admin Tools panel for schema/index
-            viewing with RO-safe callbacks.
+            <code>aac.animals</code>, and secrets managed via environment variables.
+            Interactive DataTable, charts, and a map (with Austin fallback) support fast
+            filtering and exploration. PEP-8-compliant callbacks and an Admin Tools panel
+            for schema/index viewing with RO-safe callbacks.
           </p>
         </article>
+
       </div>
     </section>
 
+    <!-- CTA STRIP -->
     <section class="cta-strip">
       <p><strong>Ready to dive in?</strong> Explore the three artifacts, each with summaries, evidence, and reflections.</p>
       <a class="btn" href="artifacts.html">Go to Artifacts</a>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© <span id="year"></span> Burak Tutkavul • <a href="https://github.com/brock936" rel="noopener" target="_blank">GitHub</a></p>
+    <p>© <span id="year"></span> Burak Tutkavul • 
+      <a href="https://github.com/brock936" rel="noopener" target="_blank">GitHub</a>
+    </p>
   </footer>
 
   <script src="assets/js/main.js"></script>
